@@ -2,7 +2,8 @@ $script = <<-SCRIPT
 export DEBIAN_FRONTEND=noninteractive
 apt-get update && apt-get upgrade -y && \
 apt-get install -y --no-install-recommends \
-  gdm3 gnome-shell gnome-session firefox-esr chromium\
+  gdm3 gnome-shell gnome-session firefox-esr \
+  chromium chromium-sandbox gnome-terminal \
   ibus ibus-gtk3 ibus-chewing im-config fonts-noto-cjk
 SCRIPT
 
